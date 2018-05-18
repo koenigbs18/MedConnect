@@ -9,6 +9,11 @@ Developed in Java using eclipse, database in MySQL hosted at UW-Whitewater on th
 
 Contact info:
 
+Developed along side Matt Adelson at UW-Whitewater
+
+Matt Adelson: AdelsonMD23@uww.edu
+
+Brett Koenig:
 brettkoenig@hotmail.com
 or
 koenigbs18@uww.edu
