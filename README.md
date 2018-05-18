@@ -15,5 +15,5 @@ Matt Adelson: AdelsonMD23@uww.edu
 
 Brett Koenig:
 brettkoenig@hotmail.com
-or
+and
 koenigbs18@uww.edu
