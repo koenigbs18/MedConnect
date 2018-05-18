@@ -7,11 +7,11 @@ Some notable features are complete database utility for data (no locally stored 
 
 Developed in Java using eclipse, database in MySQL hosted at UW-Whitewater on the Washington server.
 
-##Credits
+## Credits
 
 Developed along side Matt Adelson at UW-Whitewater
 
-###Contact info
+### Contact info
 
 Matt Adelson: AdelsonMD23@uww.edu
 
