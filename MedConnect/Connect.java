@@ -5,6 +5,9 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
 public class Connect {
 
@@ -35,31 +38,30 @@ public class Connect {
         }
     } // end of Connection
 
-    public String Query(String sqlQuery) {
-        String s="";
+    public ArrayList<String> Query(String sqlQuery, boolean update) {
+    	ArrayList<String> list = new ArrayList<String>();
         try {
             statement = connection.createStatement();
-            resultSet = statement.executeQuery(sqlQuery);
+            if(update == true)
+            	statement.executeUpdate(sqlQuery);
+            else
+            	resultSet = statement.executeQuery(sqlQuery);
 
             ResultSetMetaData metaData = resultSet.getMetaData();
             int columns = metaData.getColumnCount();
 
-            /*for (int i = 1; i <= columns; i++) {
-                System.out.print(metaData.getColumnName(i) + "\t");
-            }
-
-            System.out.println();*/
             while (resultSet.next()) {
+            	String s = "";
 
                 for (int i=1; i<= columns; i++) {
-                    s+=resultSet.getObject(i)+",";
+                    s+=resultSet.getObject(i)+ ",";
                 }
-                System.out.println();
+                list.add(s);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return s;
+        return list;
     } // end of simpleQuery method
 }
 	    
