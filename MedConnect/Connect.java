@@ -15,7 +15,7 @@ public class Connect {
     static final String netID = "koenigbs18"; // Please enter your netId
     static final String hostName = "washington.uww.edu";
     static final String databaseURL = "jdbc:mysql://" + hostName + "/" + databasePrefix;
-    static final String password = "bk8462"; // please enter your own password
+    static final String password = "-redacted-"; // please enter your own password
 
     private Connection connection = null;
     private Statement statement = null;
